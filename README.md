@@ -1,3 +1,3 @@
-https://tomascarlson.github.com
+https://tomascarlson.github.io
 
 A personal portfolio site.
