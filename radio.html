@@ -6,7 +6,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body class="preload">
-    <div class="text-center font-bold flex md:flex-row flex-col flex-1 h-full md:h-screen" style="height: -webkit-fill-available !important;">
+    <div class="text-center font-bold flex md:flex-row flex-col flex-1 h-screen">
       <a class="flex-1 flex-col w-full flex justify-end" style="background-image: url('img/samplesonics.jpg');" href="https://www.mixcloud.com/SampleSonics/">
         <div class="p-1	text-2xl md:pt-64" style="background: linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(255,255,255,0) 100%);">Music discovery through samples.<br>A mix of hip-hop and their samples of countless genres.</div>
       </a>
@@ -16,6 +16,11 @@
     </div>
   </body>
   <style>
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
+      #element {
+        height: -webkit-fill-available !important;
+      } 
+    }
     .preload {
       -webkit-transition: none !important;
       -moz-transition: none !important;
