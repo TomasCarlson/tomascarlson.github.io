@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="preload">
+    <div class="text-center font-bold flex md:flex-row flex-col flex-1 h-screen">
+      <a class="flex-1 flex-col w-full flex justify-end" style="background-image: url('img/samplesonics.jpg');" href="https://www.mixcloud.com/SampleSonics/">
+        <div class="p-1	text-2xl md:pt-64" style="background: linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(255,255,255,0) 100%);">Music discovery through samples.<br>A mix of hip-hop and their samples of countless genres.</div>
+      </a>
+      <a class="flex-1 flex-col w-full flex justify-end" style="background-image: url('img/bonus.jpg');" href="http://wrbbradio.org/2021/02/12/qa-holy-hive-discuss-the-feelings-people-and-relationships-that-inspire-their-signature-sound/">
+        <div class="p-1	text-2xl md:pt-64" style="background: linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(255,255,255,0) 100%)" >Interviews and music from up and coming and established artists.</div>
+      </a>
+    </div>
+  </body>
+  <style>
+    .preload {
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -ms-transition: none !important;
+      -o-transition: none !important;
+      transition: none !important;
+    }
+    body {
+      font-family: Helvetica;
+      overflow: hidden;
+    }
+    div, a {
+      background-size: cover;
+      color: #fff;
+      background-size: auto 100%;
+      background-position: center;
+      -webkit-transition: .4s ease-in-out;
+      -moz-transition: .4s ease-in-out;
+      -ms-transition: .4s ease-in-out;
+      -o-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+    }
+    div:hover, a:hover {
+      background-size: auto 110%;
+    }
+  </style>
+  <script>
+    $(window).load(function() {
+      $("body").removeClass("preload");
+    });
+  </script>
+</html>

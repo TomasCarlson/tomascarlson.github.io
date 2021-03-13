@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="preload">
+    <div class="flex flex-row flex-1 h-screen">
+      <div class="flex-1 flex-col w-full flex justify-end text-right" style="background-image: url('img/bg1.jpg');">
+        <div class="font-bold text-7xl md:text-9xl">No Mas</div>
+        <div class="font-bold md:text-4xl"></divclass>(Tomás Carlson)</div>
+      </div>
+      <div class="font-bold text-3xl md:text-7xl flex flex-col flex-1"> 
+        <a class="flex-1 flex-col w-full flex justify-end" href="https://www.youtube.com/channel/UCsMgN6zULolfvnrJOcg8KbA" style="background-image: url('img/warm.jpg');">
+          Music
+        </a>
+        <a class="flex-1 flex-col w-full flex justify-end" href="radio.html" style="background-image: url('img/glass.jpg');">
+          Radio
+        </a>
+        <div class="flex-1 flex-col w-full flex justify-end" style="background-image: url('img/trees.jpg');">Coding</div>
+      </div>
+    </div>
+  </body>
+  <style>
+    .preload {
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -ms-transition: none !important;
+      -o-transition: none !important;
+      transition: none !important;
+    }
+    body {
+      font-family: Helvetica;
+      overflow: hidden;
+    }
+    div, a {
+      background-size: cover;
+      color: #fff;
+      background-size: 100%;
+      background-position: center;
+      -webkit-transition: .4s ease-in-out;
+      -moz-transition: .4s ease-in-out;
+      -ms-transition: .4s ease-in-out;
+      -o-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+    }
+    div:hover, a:hover {
+      background-size: 120%;
+    }
+    @media only screen and (max-width: 640px) {
+      div, a {
+      background-size: auto 100% !important;
+    }
+    div:hover, a:hover {
+      background-size: auto 120% !important;
+    }
+
+    }
+  </style>
+  <script>
+    $(window).load(function() {
+      $("body").removeClass("preload");
+    });
+  </script>
+</html>
