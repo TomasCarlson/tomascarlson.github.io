@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
+    <title>No Mas</title>
   </head>
   <body class="preload">
     <main id="swup" class="transition-fade">
       <div id="iosHeight" class="flex flex-col md:flex-row flex-auto md:flex-1 h-screen">
-        <div class="p-4 flex-1 flex-col w-full flex justify-end text-right" style="background-image: url('img/bg1.jpg');">
+        <div id="mainback" class="p-4 flex-1 flex-col w-full flex justify-end text-right" style="background-image: url('img/bg1.jpg');">
           <div class="font-bold text-7xl md:text-9xl">No Mas</div>
           <div class="font-bold text-2xl md:text-4xl"></divclass>(Tomás Carlson)</div>
         </div>
         <div class="font-bold text-3xl md:text-7xl flex flex-col flex-auto md:flex-1"> 
-          <a class="p-2 flex-1 flex-col w-full flex justify-end" href="/code.html" style="background-image: url('img/back.jpg');">
+          <a data-swup-transition="code" id="mainback" class="p-2 flex-1 flex-col w-full flex justify-end" href="/code.html" style="background-image: url('img/back.jpg');">
             Coding
           </a>
-          <a class="p-2 flex-1 flex-col w-full flex justify-end" href="/radio.html" style="background-image: url('img/glass.jpg');">
+          <a data-swup-transition="radio" id="mainback" class="p-2 flex-1 flex-col w-full flex justify-end" href="/radio.html" style="background-image: url('img/glass.jpg');">
             Radio
           </a>
-          <a class="p-2 flex-1 flex-col w-full flex justify-end" href="https://www.youtube.com/channel/UCsMgN6zULolfvnrJOcg8KbA" style="background-image: url('img/trees.jpg');">
+          <a id="mainback" class="p-2 flex-1 flex-col w-full flex justify-end" href="https://www.youtube.com/channel/UCsMgN6zULolfvnrJOcg8KbA" style="background-image: url('img/trees.jpg');">
             Music
           </a>
         </div>
@@ -35,12 +36,4 @@
       });
     </script>
   </body>
-  <style>
-    div, a {
-      background-size: 100% !important;
-    }
-    div:hover, a:hover {
-      background-size: 120% !important;
-    }
-  </style>
 </html>

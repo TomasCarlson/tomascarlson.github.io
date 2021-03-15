@@ -50,3 +50,18 @@ a:hover {
 html.is-animating .transition-fade {
   opacity: 0;
 }
+
+html.to-code body {
+  background-color: #464648 !important;
+}
+
+html.to-radio body {
+  background-color: #A9B8CD !important;
+}
+
+#mainback {
+  background-size: 100% !important;
+}
+#mainback:hover {
+  background-size: 120% !important;
+}
