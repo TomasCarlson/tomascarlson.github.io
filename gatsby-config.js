@@ -3,6 +3,7 @@ module.exports = {
     title: "Tomás Carlson",
   },
   plugins: [
-    `gatsby-plugin-layout` 
+    `gatsby-plugin-layout`,
+    `gatsby-plugin-react-helmet` 
   ],
 };

@@ -1,14 +1,14 @@
 @import url("https://use.typekit.net/zey0gop.css");
 
-.content-box {
-  height: 100vh;
-}
-
 .selection-box {
   flex: 1;
   clip-path: inset(-12px 0px -12px -12px);
   color: #E6ECED !important;
   text-decoration: none !important;
+}
+
+.name-flex {
+  flex: 1;
 }
 
 .selection-box:hover {
@@ -20,8 +20,8 @@
   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.25);
 }
 
-body {
-  overflow-x: hidden;
+.main-rows {
+  width: 100vw;
 }
 
 .box-title {
@@ -38,11 +38,31 @@ body {
   font-size: 10vmin;
 }
 
+.project-title {
+  font-size: 8vmin;
+  color: #E6ECED !important;
+  text-decoration: underline !important;
+}
+
+.about-page {
+  height: -moz-available;         
+  height: -webkit-fill-available; 
+  height: fill-available;
+}
+
 .tomas-photo {
   background: #B3AC8D;
   width: 45vmin;
   height: 45vmin;
-  outline: 1vmin solid #E6ECED;
+}
+
+.radio-photo {
+  width: 90vmin;
+  max-width: 80%;
+}
+
+img {
+  outline: .5vmin solid #E6ECED;
 }
 
 .content-text {
@@ -56,7 +76,7 @@ body {
   z-index: 5;
 }
 
-#code {
+#projects {
   z-index: 3;
 }
 
@@ -68,8 +88,86 @@ body {
   z-index: 1;
 }
 
-@media (max-width: 767.98px) {
-  .content-box {
-    height: auto;
+.project-image:hover {
+  outline-color: #D7CEB2;
+}
+
+.about-link, .project-link, .project-image {
+  transition: .25s;
+}
+
+.about-link:hover {
+  color: #A59E8C !important;
+}
+
+.project-link:hover {
+  color: #CDC5AA !important;
+}
+
+
+@media (max-width: 767.9px) {
+  .changing-content {
+    flex: 1;
+  }
+  #nav {
+    height: 8vw;
+  }
+  #name {
+    height: 8vw;
+  }
+  .selection-box {
+    clip-path: inset(-12px -12px 0px -12px);
+  }
+  .changing-content {
+    min-height: calc(100vh - 16vw);
+    top: 16vw;
   }
 }
+
+@supports (-webkit-touch-callout: none) {
+  .changing-content {
+    min-height: -webkit-fill-available !important;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .content-box {
+    min-height: 100vh;
+  }
+
+  #nav {
+    height: 100vh;
+  }
+  #fixed-side, #nav {
+    clip-path: inset(-12px 0px -12px -12px);
+  }
+  #name {
+    height: 100vh;
+  }
+  .col-md-4 {
+    flex: 0 0 33.4%;
+    max-width: 33.4%;
+    flex-basis: 33.4%;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.9px) {  
+  .project-image {
+    max-height: 100%;
+    height: 35vh;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  .project-pic {
+    display: flex;
+  }
+  .project-image {
+    max-width: 100%
+  }
+}
+
