@@ -1,0 +1,26 @@
+{
+  "name": "tomas-carlson",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tomás Carlson",
+  "author": "Tomas Carlson",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "bootstrap": "^4.6.0",
+    "gatsby": "^3.6.2",
+    "gatsby-plugin-layout": "^2.6.0",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^17.0.1"
+  }
+}
