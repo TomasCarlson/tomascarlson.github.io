@@ -97,11 +97,11 @@ img {
 }
 
 .about-link:hover {
-  color: #A59E8C !important;
+  color: #b0a282 !important;
 }
 
 .project-link:hover {
-  color: #CDC5AA !important;
+  color: #ddcd9d !important;
 }
 
 /* under large devices (large desktops, 1200px and up) */

@@ -14,13 +14,13 @@ class RadioPage extends React.Component {
     document.getElementById("projects").style.zIndex = 3;
     document.getElementById("radio").style.zIndex = 5;
     document.getElementById("blog").style.zIndex = 2;
-    document.body.style.background = "#CDC5AA";
+    document.body.style.background = "#ddcd9d";
   }
 
   // markup
   render() {
     return (
-      <div className="w-100 h-100 d-flex text-center" style={{ color: "#E6ECED", backgroundColor: "#CDC5AA", zIndex: "4" }}>
+      <div className="w-100 h-100 d-flex text-center" style={{ color: "#E6ECED", backgroundColor: "#ddcd9d", zIndex: "4" }}>
         <Helmet>
           <title>Tomás Carlson: Radio</title>
           <meta property="og:title" name="twitter:title" content="Tomás Carlson: Radio" />

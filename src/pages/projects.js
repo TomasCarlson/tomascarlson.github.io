@@ -21,13 +21,13 @@ class ProjectPage extends React.Component {
     document.getElementById("projects").style.zIndex = 5;
     document.getElementById("radio").style.zIndex = 3;
     document.getElementById("blog").style.zIndex = 2;
-    document.body.style.background = "#93A8AC";
+    document.body.style.background = "#85b1b7";
   }
 
   // markup
   render() {
     return (
-      <div className="w-100 h-100 d-flex" style={{ color: "#E6ECED", backgroundColor: "#93A8AC", zIndex: "4" }}>
+      <div className="w-100 h-100 d-flex" style={{ color: "#E6ECED", backgroundColor: "#85b1b7", zIndex: "4" }}>
         <Helmet>
           <title>Tomás Carlson: Projects</title>
           <meta property="og:title" name="twitter:title" content="Tomás Carlson: Projects" />

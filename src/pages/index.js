@@ -7,13 +7,13 @@ import tomasWebp from "../images/tomas.webp"
 class IndexPage extends React.Component {
 
   componentDidMount() {
-    document.body.style.background = "#4C5760";
+    document.body.style.background = "#415969";
   }
 
   // markup
   render() {
     return (
-      <div class="w-100 h-100 d-flex about-page" style={{ color: "#E6ECED", backgroundColor: "#4C5760", zIndex: "4"}}>
+      <div class="w-100 h-100 d-flex about-page" style={{ color: "#E6ECED", backgroundColor: "#415969", zIndex: "4"}}>
         <div class="justify-content-center align-self-center w-100 text-center pr-5 pl-5">
           <p className="content-title mb-2">Hello there!</p>
           <div className="mb-4">

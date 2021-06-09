@@ -34,22 +34,22 @@ class Layout extends React.Component {
                 </div>
               </Col>
               <Col id="nav" sm={12} md={6} className="text-center box-title content-box d-flex flex-row flex-md-column p-0">
-                <a id="about" href="/" class="selection-box d-flex" style={{ backgroundColor: "#4C5760" }}>
+                <a id="about" href="/" class="selection-box d-flex" style={{ backgroundColor: "#415969" }}>
                   <div className="justify-content-center align-self-center w-100">
                     About
                   </div>
                 </a>
-                <a id="projects" href="/projects" class="selection-box d-flex" style={{ backgroundColor: "#93A8AC" }}>
+                <a id="projects" href="/projects" class="selection-box d-flex" style={{ backgroundColor: "#85b1b7" }}>
                   <div className="justify-content-center align-self-center w-100">
                     Projects
                   </div>
                 </a>
-                <a href="/radio" id="radio" className="selection-box d-flex" style={{ backgroundColor: "#CDC5AA" }}>
+                <a href="/radio" id="radio" className="selection-box d-flex" style={{ backgroundColor: "#ddcd9d" }}>
                   <div className="justify-content-center align-self-center w-100">
                     Radio
                   </div>
                 </a>
-                <div id="blog" className="selection-box d-flex" style={{ backgroundColor: "#A59E8C" }}>
+                <div id="blog" className="selection-box d-flex" style={{ backgroundColor: "#b0a282" }}>
                   <div className="justify-content-center align-self-center w-100">
                     Blog
                   </div>
