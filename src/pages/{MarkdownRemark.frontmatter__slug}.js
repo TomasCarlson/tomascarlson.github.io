@@ -24,7 +24,7 @@ export default function Template({
         <source srcSet={frontmatter.jpg} type="image/jpeg" />
         <img className="article-photo mb-3" src={frontmatter.jpg} alt={frontmatter.alt}/>
       </picture>
-      <p className="content-date pb-2 text-xl-left">{frontmatter.date}</p>
+      <p className="content-date pb-2 text-xl-left">{frontmatter.date} in {frontmatter.tags}</p>
       <div className="article-text text-left">
         {frontmatter.body}
       </div>
@@ -45,6 +45,7 @@ export const pageQuery = graphql`
         body
         webp
         jpg
+        tags
       }
     }
   }

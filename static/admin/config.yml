@@ -25,3 +25,4 @@ collections:
       - { label: 'jpg', name: 'jpg', widget: 'image' }
       - { label: 'Alt', name: 'alt', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }

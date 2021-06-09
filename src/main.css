@@ -102,23 +102,20 @@ img {
 }
 
 
-.project-image:hover {
+.project-image:hover, .radio-photo:hover, #blog-img:hover{
   outline-color: #415969;
 }
 
-.radio-photo:hover {
-  outline-color: #B0A282;
-}
 
-.about-link, .project-link, .project-image {
-  transition: .25s;
+.about-link, .project-link, .project-image, .blog-link {
+  transition: .2s;
 }
 
 .about-link:hover {
-  color: #85B2B7 !important;
+  color: #B0A282 !important;
 }
 
-.project-link:hover {
+.project-link:hover, .blog-link:hover {
   color: #415969 !important;
 }
 

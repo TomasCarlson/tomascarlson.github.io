@@ -27,7 +27,9 @@ class BlogPost extends React.Component {
   render() {
     return (
       <div className="w-100 h-100 d-flex" style={{ color: "#E6ECED", backgroundColor: "#B0A282", zIndex: "4" }}>
-        {this.props.children}
+        <div className="w-100 text-center pr-4 pl-4 pr-sm-5 pl-sm-5 pt-3 pb-3">
+          {this.props.children}
+        </div>
       </div>
     )
   }
