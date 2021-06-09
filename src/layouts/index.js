@@ -29,7 +29,7 @@ class Layout extends React.Component {
               <Col id="name" sm={12} md={6} className="box-title content-box d-flex flex-column p-0" style={{ backgroundColor: "#E6ECED", color: "#1F2327", zIndex: "6" }}>
                 <div className="d-flex name-flex">
                   <div id="name-tag" className="justify-content-center align-self-center w-100 d-block">
-                    <h1 className="m-0 box-title text-center">Tomás Carlson</h1>
+                    <h1 id="name-text" className="m-0 box-title text-center">Tomás Carlson</h1>
                   </div>
                 </div>
               </Col>

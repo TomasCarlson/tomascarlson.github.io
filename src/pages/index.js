@@ -6,6 +6,10 @@ import tomasWebp from "../images/tomas.webp"
 
 class IndexPage extends React.Component {
 
+  componentDidMount() {
+    document.body.style.background = "#4C5760";
+  }
+
   // markup
   render() {
     return (

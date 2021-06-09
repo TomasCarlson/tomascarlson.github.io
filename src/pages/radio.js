@@ -14,6 +14,7 @@ class RadioPage extends React.Component {
     document.getElementById("projects").style.zIndex = 3;
     document.getElementById("radio").style.zIndex = 5;
     document.getElementById("blog").style.zIndex = 2;
+    document.body.style.background = "#CDC5AA";
   }
 
   // markup
