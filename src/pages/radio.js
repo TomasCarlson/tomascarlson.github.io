@@ -28,11 +28,13 @@ class RadioPage extends React.Component {
         </Helmet>
         <div className="w-100 pr-5 pl-5 pt-2 mt-4">
           <div className="mb-3">
+          <a href="https://www.mixcloud.com/SampleSonics/" target="_blank" rel="noopener noreferrer">
             <picture>
               <source srcSet={sampleWEBP} type="image/webp" />
               <source srcSet={sampleJPG} type="image/jpeg" />
               <img className="radio-photo" src={sampleJPG} alt="SampleSonics Banner" />
             </picture>
+            </a>
           </div>
           <p className="content-text mb-4">Music discovery through samples: a mix of hip-hop songs and their diverse samples.</p>
           <div className="mb-3">

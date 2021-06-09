@@ -15,7 +15,7 @@
   cursor: pointer;
 }
 
-.content-box, .selection-box {
+.content-box, .selection-box, img {
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.25); 
   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.25);
 }
@@ -57,7 +57,8 @@
 }
 
 .radio-photo {
-  width: 85%;
+  width: 78%;
+  transition: .25s;
 }
 
 img {
@@ -87,8 +88,13 @@ img {
   z-index: 1;
 }
 
+
 .project-image:hover {
-  outline-color: #D7CEB2;
+  outline-color: #415969;
+}
+
+.radio-photo:hover {
+  outline-color: #B0A282;
 }
 
 .about-link, .project-link, .project-image {
@@ -96,11 +102,11 @@ img {
 }
 
 .about-link:hover {
-  color: #b0a282 !important;
+  color: #85B2B7 !important;
 }
 
 .project-link:hover {
-  color: #ddcd9d !important;
+  color: #415969 !important;
 }
 
 /* under large devices (large desktops, 1200px and up) */
