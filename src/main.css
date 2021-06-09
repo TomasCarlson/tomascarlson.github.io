@@ -57,8 +57,7 @@
 }
 
 .radio-photo {
-  width: 90vmin;
-  max-width: 80%;
+  width: 85%;
 }
 
 img {
@@ -133,12 +132,15 @@ img {
     top: 20vw;
   }
   .project-image {
-    max-height: 100%;
+    max-height: auto;
     height: auto;
-    width: 90%;
+    width: 80vw;
   }
   .box-title {
     font-size: 4vw;
+  }
+  .radio-photo {
+    width: 80vw;
   }
 }
 
