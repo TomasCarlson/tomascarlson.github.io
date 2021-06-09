@@ -33,7 +33,7 @@ class ProjectPage extends React.Component {
           <meta property="og:title" name="twitter:title" content="Tomás Carlson: Projects" />
           <meta property="og:description" name="twitter:description" content="A excerpt of some of the programming projects I was a part of." />
         </Helmet>
-        <div className="w-100 text-center text-xl-left pr-5 pl-5 pt-2">
+        <div className="w-100 text-center text-xl-left pr-4 pl-4 pr-sm-5 pl-sm-5 pt-2">
           <ProjectItem
             name="Playlist Mutator"
             desc='Made in React, utilizes the Spotify API to provide a tool for users to "mutate" existing playlists in React.'

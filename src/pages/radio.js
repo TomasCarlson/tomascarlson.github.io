@@ -26,7 +26,7 @@ class RadioPage extends React.Component {
           <meta property="og:title" name="twitter:title" content="Tomás Carlson: Radio" />
           <meta property="og:description" name="twitter:description" content="A repository of radio shows I hosted, which concepts I developed and branded." />
         </Helmet>
-        <div className="w-100 pr-5 pl-5 pt-2 mt-4">
+        <div className="w-100 pr-4 pl-4 pr-sm-5 pl-sm-5 pt-2 mt-4">
           <div className="mb-3">
             <a href="https://www.mixcloud.com/SampleSonics/" target="_blank" rel="noopener noreferrer">
             <picture>
