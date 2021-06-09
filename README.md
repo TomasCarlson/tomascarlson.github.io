@@ -1,3 +1,3 @@
-My Person Website
+My Personal Website
 
 https://tomascarlson.com
