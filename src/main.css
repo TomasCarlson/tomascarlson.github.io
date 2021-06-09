@@ -122,6 +122,10 @@ img {
   color: #415969 !important;
 }
 
+.changing-content {
+  clip-path: inset(0px 0px 0px -12px);
+}
+
 /* under large devices (large desktops, 1200px and up) */
 @media (max-width: 1199.9px) {  
   .project-image {
