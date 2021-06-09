@@ -49,11 +49,11 @@ class Layout extends React.Component {
                     Radio
                   </div>
                 </a>
-                <div id="blog" className="selection-box d-flex" style={{ backgroundColor: "#b0a282" }}>
+                <a href="/blog" id="blog" className="selection-box d-flex" style={{ backgroundColor: "#b0a282" }}>
                   <div className="justify-content-center align-self-center w-100">
                     Blog
                   </div>
-                </div>
+                </a>
               </Col>
             </Row>
           </Col>

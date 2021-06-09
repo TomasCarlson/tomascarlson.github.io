@@ -28,7 +28,7 @@ class RadioPage extends React.Component {
         </Helmet>
         <div className="w-100 pr-5 pl-5 pt-2 mt-4">
           <div className="mb-3">
-          <a href="https://www.mixcloud.com/SampleSonics/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.mixcloud.com/SampleSonics/" target="_blank" rel="noopener noreferrer">
             <picture>
               <source srcSet={sampleWEBP} type="image/webp" />
               <source srcSet={sampleJPG} type="image/jpeg" />
@@ -36,7 +36,8 @@ class RadioPage extends React.Component {
             </picture>
             </a>
           </div>
-          <p className="content-text mb-4">Music discovery through samples: a mix of hip-hop songs and their diverse samples.</p>
+          <p className="content-text">Music discovery through samples: a mix of hip-hop songs and their diverse samples.</p>
+          <hr className="mb-4" />
           <div className="mb-3">
             <a href="http://wrbbradio.org/2021/02/12/qa-holy-hive-discuss-the-feelings-people-and-relationships-that-inspire-their-signature-sound/" target="_blank" rel="noopener noreferrer">
               <picture>

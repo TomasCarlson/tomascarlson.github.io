@@ -7,6 +7,11 @@
   text-decoration: none !important;
 }
 
+hr {
+  background-color: #E6ECED !important;
+  border-color: #E6ECED !important;
+}
+
 .name-flex {
   flex: 1;
 }
@@ -56,7 +61,7 @@
   height: 45vmin;
 }
 
-.radio-photo {
+.radio-photo, .article-photo {
   width: 78%;
   transition: .25s;
 }
@@ -65,11 +70,19 @@ img {
   outline: .5vmin solid #E6ECED;
 }
 
-.content-text {
+.content-text, .content-date, .article-text {
   font-family: campaign, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 4vmin;
+}
+
+.content-date, .article-text {
+  font-size: 3vmin;
+}
+
+.article-text {
+  text-indent: 5vmin;
 }
 
 #about {
@@ -140,13 +153,13 @@ img {
   .project-image {
     max-height: auto;
     height: auto;
-    width: 80vw;
+    width: 74vw;
   }
   .box-title {
     font-size: 4vw;
   }
-  .radio-photo {
-    width: 80vw;
+  .radio-photo, .article-photo {
+    width: 74vw;
   }
 }
 

@@ -12,7 +12,7 @@ function ProjectItem(props) {
             <a href={props.link} className="d-none d-xl-block" target="_blank" rel="noopener noreferrer">
               <p className="content-title mb-2 project-link project-title pb-2">{props.name}</p>
             </a>
-            <h2 className="content-text">{props.desc}</h2>
+            <h3 className="content-text">{props.desc}</h3>
           </Col>
           <Col lg={12} xl={4} className="order-1 order-xl-2 project-pic">
             <a href={props.link} className="d-block d-xl-none">

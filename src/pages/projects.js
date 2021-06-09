@@ -41,6 +41,7 @@ class ProjectPage extends React.Component {
             webp={playlistWEBP}
             link="https://playlistmutator.com"
           />
+          <hr/>
           <ProjectItem
             name="OLTO CONCEPTS"
             desc='Created the branding, and portfolio site (made in Gatsby) for a web development and design partnership.'
@@ -48,6 +49,7 @@ class ProjectPage extends React.Component {
             webp={oltoWEBP}
             link="https://oltoconcepts.com"
           />
+          <hr/>
           <ProjectItem
             name="WRBB 104.9"
             desc='Maintained site using Wordpress, helped to work on future redesign.'
@@ -55,6 +57,7 @@ class ProjectPage extends React.Component {
             webp={wrbbWEBP}
             link="https://wrbbradio.org"
           />
+          <hr/>
           <ProjectItem
             name="Crossword Puzzles"
             desc='Javascript puzzle game.'
