@@ -1,6 +1,6 @@
 ---
 title: Website Redesign
-date: 2021-06-10T04:19:04.684Z
+date: 2021-06-05T04:19:04.684Z
 subtitle: Added a breath of fresh air and usability to my site.
 webp: /img/redesign.webp
 jpg: /img/redesign.jpg
