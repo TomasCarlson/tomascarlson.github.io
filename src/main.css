@@ -66,6 +66,12 @@ hr {
   transition: .25s;
 }
 
+.article-text>p>a {
+  color: #E6ECED !important;
+  text-decoration: underline !important;
+  transition: .25s;
+}
+
 img {
   outline: .5vmin solid #E6ECED;
 }
@@ -115,7 +121,7 @@ img {
   color: #B0A282 !important;
 }
 
-.project-link:hover, .blog-link:hover {
+.project-link:hover, .blog-link:hover, .article-text>p>a:hover {
   color: #415969 !important;
 }
 

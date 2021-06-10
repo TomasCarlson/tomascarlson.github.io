@@ -8,6 +8,7 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  const articleStuff = html;
   return (
     <BlogPost>
       <Helmet>
@@ -24,9 +25,8 @@ export default function Template({
         <source srcSet={frontmatter.jpg} type="image/jpeg" />
         <img className="article-photo mb-3" src={frontmatter.jpg} alt={frontmatter.alt}/>
       </picture>
-      <p className="content-date pb-2 text-xl-left">{frontmatter.date} in {frontmatter.tags}</p>
-      <div className="article-text text-left">
-        {frontmatter.body}
+      <p className="content-date text-xl-left">{frontmatter.date} in {frontmatter.tags}</p>
+      <div dangerouslySetInnerHTML={{ __html: articleStuff }} className="article-text text-left">
       </div>
 
     </BlogPost>
@@ -42,7 +42,6 @@ export const pageQuery = graphql`
         slug
         title
         subtitle
-        body
         webp
         jpg
         tags

@@ -6,14 +6,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ['/admin'],
+      },
+    },
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
-        exclude: ['/admin'],
+        path: `${__dirname}/blog`,
       },
     },
     `gatsby-transformer-remark`,
