@@ -14,13 +14,13 @@ function BList({ data }) {
         <div>
         <div className="mt-n2 mt-md-1">
           <Row>
-            <Col lg={12} xl={8} className="order-2 order-xl-1 d-block d-md-flex">
+            <Col lg={12} xl={8} className="order-2 order-xl-1 d-block d-xl-flex">
               <div className="justify-content-center align-self-center">
                 <a href={post.frontmatter.slug} className="d-none d-xl-block">
                   <p className="content-title blog-link text-xl-left project-title mb-n2">{post.frontmatter.title}</p>
                 </a>
                 <p className="content-date text-xl-left mb-n1 d-none d-xl-block">{post.frontmatter.date}</p>
-                <p className="content-text text-xl-left mb-n1 mb-sm-1">{post.frontmatter.subtitle}</p>
+                <p className="content-text text-center text-xl-left mb-n1 mb-sm-1">{post.frontmatter.subtitle}</p>
               </div>
             </Col>
             <Col lg={12} xl={4} className="order-1 order-xl-2 project-pic">

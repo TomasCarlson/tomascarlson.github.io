@@ -1,5 +1,5 @@
 ---
-title: tomascarlson.com Redesign
+title: Website Redesign
 date: 2021-06-10T04:19:04.684Z
 subtitle: A breath of fresh air and usability.
 webp: /img/redesign.webp

@@ -26,7 +26,7 @@ class BlogPage extends React.Component {
           <meta property="og:title" name="twitter:title" content="Tomás Carlson: Blog" />
           <meta property="og:description" name="twitter:description" content="My blog, featiring original articles surrounding music, tech, culture, and more." />
         </Helmet>
-        <div className="w-100 text-center pr-4 pl-4 pr-sm-5 pl-sm-5 pt-3 pt-md-0">
+        <div className="w-100 text-center pr-4 pl-4 pr-sm-5 pl-sm-5 pt-4 pt-md-4">
           <BlogList></BlogList>
         </div>
       </div>

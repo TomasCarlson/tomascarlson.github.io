@@ -61,7 +61,14 @@ hr {
   height: 45vmin;
 }
 
-.radio-photo, .article-photo {
+.article-text>p>img {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+
+.radio-photo, .article-photo, .article-text>p>img {
   width: 78%;
   transition: .25s;
 }
@@ -172,7 +179,7 @@ img {
   .box-title {
     font-size: 4vw;
   }
-  .radio-photo, .article-photo {
+  .radio-photo, .article-photo, .article-text>p>img {
     width: 74vw;
   }
 }
