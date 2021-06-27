@@ -3,13 +3,13 @@
 .selection-box {
   flex: 1;
   clip-path: inset(-12px 0px -12px -12px);
-  color: #E6ECED !important;
+  color: #ededed !important;
   text-decoration: none !important;
 }
 
 hr {
-  background-color: #E6ECED !important;
-  border-color: #E6ECED !important;
+  background-color: #ededed !important;
+  border-color: #ededed !important;
 }
 
 .name-flex {
@@ -45,7 +45,7 @@ hr {
 
 .project-title {
   font-size: 8vmin;
-  color: #E6ECED !important;
+  color: #ededed !important;
   text-decoration: underline !important;
 }
 
@@ -74,13 +74,13 @@ hr {
 }
 
 .article-text>p>a {
-  color: #E6ECED !important;
+  color: #ededed !important;
   text-decoration: underline !important;
   transition: .25s;
 }
 
 img {
-  outline: .5vmin solid #E6ECED;
+  outline: .5vmin solid #ededed;
 }
 
 .content-text, .content-date, .article-text {
