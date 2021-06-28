@@ -41,6 +41,7 @@ hr {
 
 .content-title {
   font-size: 10vmin;
+  line-height: 1.2;
 }
 
 .project-title {
@@ -110,7 +111,6 @@ img {
 #blog {
   z-index: 1;
 }
-
 
 .project-image:hover, .radio-photo:hover, #blog-img:hover{
   outline-color: #415969;
