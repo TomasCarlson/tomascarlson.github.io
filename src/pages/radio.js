@@ -23,6 +23,7 @@ class RadioPage extends React.Component {
       <div className="w-100 h-100 d-flex text-center" style={{ color: "#E6ECED", backgroundColor: "#ddcd9d", zIndex: "4" }}>
         <Helmet>
           <title>Tomás Carlson: Radio</title>
+          <meta name="description" content="A repository of radio shows I hosted, which concepts I developed and branded." />
           <meta property="og:title" name="twitter:title" content="Tomás Carlson: Radio" />
           <meta property="og:description" name="twitter:description" content="A repository of radio shows I hosted, which concepts I developed and branded." />
         </Helmet>

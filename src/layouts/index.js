@@ -19,6 +19,7 @@ class Layout extends React.Component {
             <title>Tomás Carlson</title>
             <meta property="og:title" name="twitter:title" content="Tomás Carlson" />
             <meta property="og:description" name="twitter:description" content="Tomás Carlson: Developer, Producer, Graphic Designer and DJ currently studying Computer Science & Design at Northeastern University." />
+            <meta name="description" content="Tomás Carlson: Developer, Producer, Graphic Designer and DJ currently studying Computer Science & Design at Northeastern University." />
             <meta property="og:image" name="twitter:image" content={socialBanner} />
             <meta property="og:url" content="https://tomascarlson.com" />
             <meta property="og:site_name" content="Tomás Carlson" />

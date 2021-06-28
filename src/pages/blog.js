@@ -23,6 +23,7 @@ class BlogPage extends React.Component {
       <div className="w-100 h-100 d-flex" style={{ color: "#E6ECED", backgroundColor: "#B0A282", zIndex: "4" }}>
         <Helmet>
           <title>Tomás Carlson: Blog</title>
+          <meta name="description" content="My blog, featiring original articles surrounding music, tech, culture, and more." />
           <meta property="og:title" name="twitter:title" content="Tomás Carlson: Blog" />
           <meta property="og:description" name="twitter:description" content="My blog, featiring original articles surrounding music, tech, culture, and more." />
         </Helmet>

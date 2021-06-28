@@ -13,6 +13,7 @@ export default function Template({
     <BlogPost>
       <Helmet>
         <title>{frontmatter.title} | Tomás Carlson</title>
+        <meta name="description" content={frontmatter.subtitle} />
         <meta property="og:title" name="twitter:title" content={frontmatter.title + " | Tomás Carlson"} />
         <meta property="og:description" name="twitter:description" content={frontmatter.subtitle} />
         <meta name="twitter:image:alt" content={frontmatter.alt} />

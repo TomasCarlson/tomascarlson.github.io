@@ -30,6 +30,7 @@ class ProjectPage extends React.Component {
       <div className="w-100 h-100 d-flex" style={{ color: "#E6ECED", backgroundColor: "#85b1b7", zIndex: "4" }}>
         <Helmet>
           <title>Tomás Carlson: Projects</title>
+          <meta name="description" content="A excerpt of some of the programming projects I was a part of." />
           <meta property="og:title" name="twitter:title" content="Tomás Carlson: Projects" />
           <meta property="og:description" name="twitter:description" content="A excerpt of some of the programming projects I was a part of." />
         </Helmet>
