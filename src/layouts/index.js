@@ -31,6 +31,9 @@ class Layout extends React.Component {
                 <div className="d-flex name-flex">
                   <div id="name-tag" className="justify-content-center align-self-center w-100 d-block">
                     <h1 id="name-text" className="m-0 box-title text-center">Tomás Carlson</h1>
+                    <audio controls>
+                      <source src="https://stream-relay-geo.ntslive.net/stream" type="audio/mpeg" />
+                    </audio>
                   </div>
                 </div>
               </Col>
