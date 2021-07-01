@@ -24,6 +24,7 @@ class Layout extends React.Component {
             <meta property="og:url" content="https://tomascarlson.com" />
             <meta property="og:site_name" content="Tomás Carlson" />
             <meta name="twitter:image:alt" content="Stylized photo of Tomás Carlson" />
+            <meta name="theme-color" content="#415969" />
           </Helmet>
           <Col id="fixed-side" sm={12} md={4} className="fixed-top box-title content-box d-flex flex-column p-0">
             <Row className="m-0">
