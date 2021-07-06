@@ -13,7 +13,7 @@ function ProjectItem(props) {
               <a href={props.link} className="d-none d-xl-block" target="_blank" rel="noopener noreferrer">
                 <h3 className="content-title mb-2 project-link project-title pb-2">{props.name}</h3>
               </a>
-              <p className="content-text">{props.desc}</p>
+              <p className="content-text mb-0">{props.desc}</p>
             </div>
           </Col>
           <Col lg={12} xl={4} className="order-1 order-xl-2 project-pic">
@@ -31,8 +31,8 @@ function ProjectItem(props) {
             </div>
           </Col>
         </Row>
-        
       </div>
+      <hr />
    </>
    )
  }
