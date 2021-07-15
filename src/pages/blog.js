@@ -2,11 +2,6 @@ import * as React from "react"
 import { Helmet } from "react-helmet"
 import BlogList from "../components/blog-list"
 
-import bonusJPG from "../images/radio/bonustracks.jpg"
-import bonusWEBP from "../images/radio/bonustracks.webp"
-
-
-
 class BlogPage extends React.Component {
 
   componentDidMount() {

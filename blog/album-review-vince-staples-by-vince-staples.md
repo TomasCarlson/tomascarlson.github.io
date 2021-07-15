@@ -5,7 +5,7 @@ subtitle: Staples paints a self-portrait in his most focused release to date.
 webp: /img/vinceself.webp
 jpg: /img/vinceself.jpg
 alt: Vince Staples Album art
-slug: vince-staples-self-titled
+slug: /blog/vince-staples-self-titled
 tags:
   - music
   - review

@@ -1,13 +1,5 @@
 import * as React from "react"
 
-import { Helmet } from "react-helmet"
-
-import bonusJPG from "../images/radio/bonustracks.jpg"
-import bonusWEBP from "../images/radio/bonustracks.webp"
-import { graphql } from 'gatsby'
-
-
-
 
 class BlogPost extends React.Component {
 

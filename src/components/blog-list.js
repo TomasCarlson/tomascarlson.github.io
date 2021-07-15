@@ -2,8 +2,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { Link } from "gatsby"
-
 
 function BList({ data }) {
   const { posts } = data.blog
