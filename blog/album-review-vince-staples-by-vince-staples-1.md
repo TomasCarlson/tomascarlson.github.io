@@ -12,7 +12,7 @@ tags:
 ---
 Throughout his career, Vince Staples has always struggled with the way his music, particularly this lyrical content, was consumed; to him, many listeners seemed to shrug off the stories of his run-ins with violence and loss as disposable entertainment. He highlighted this gripe [in an interview](https://www.npr.org/2017/04/02/522236735/vince-staples-we-live-in-a-space-where-your-name-isnt-enough) while defending the mother who made the viral rant against the graphic lyrics of "Norf Norf", Staples' breakout single:
 
-"When you see a film, and you see a murder scene or a rape scene or something that's displaying an element of trauma, we don't look at it and go, 'This movie's f\*\*\*\*\*\* great, I'm having a great time, are you?' We feel for that. Know what I'm saying? But it doesn't necessarily happen in that sense when we're speaking about music. So I didn't make that song for it to make people happy."
+*"When you see a film, and you see a murder scene or a rape scene or something that's displaying an element of trauma, we don't look at it and go, 'This movie's f\*\*\*\*\*\* great, I'm having a great time, are you?' We feel for that. Know what I'm saying? But it doesn't necessarily happen in that sense when we're speaking about music. So I didn't make that song for it to make people happy."*
 
 In Staples' previous project, FM!, he presented a tongue-in-cheek critique to this dismissive listening by juxtapositioning grim lyrics with playful beats and radio tags. With his new self-titled work, however, Staples seems to go the opposite direction: he trades the upbeat satire for a delivery that's sobering and direct. With Vince Staples, he makes sure the listener is paying attention to what he has to say.
 
