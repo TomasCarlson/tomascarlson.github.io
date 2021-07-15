@@ -61,6 +61,7 @@ export default function BlogList(props) {
                 webp
                 jpg
                 tags
+                alt
               }
             }
           }
