@@ -28,7 +28,7 @@ class Layout extends React.Component {
           </Helmet>
           <Col id="fixed-side" sm={12} md={4} className="fixed-top box-title content-box d-flex flex-column p-0">
             <Row className="m-0">
-              <Col id="name" sm={12} md={6} className="box-title content-box d-flex flex-column p-0" style={{ backgroundColor: "#ededed", color: "#1F2327", zIndex: "6" }}>
+              <Col id="name" sm={12} md={6} className="box-title content-box d-flex flex-column p-0" style={{ backgroundColor: "#FAFAFA", color: "#1F2327", zIndex: "6" }}>
                 <div className="d-flex name-flex">
                   <div id="name-tag" className="justify-content-center align-self-center w-100 d-block">
                     <h1 id="name-text" className="m-0 box-title text-center">Tomás Carlson</h1>
