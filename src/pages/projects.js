@@ -9,6 +9,8 @@ import wrbbJPG from "../images/projects/wrbb.jpg"
 import wrbbWEBP from "../images/projects/wrbb.webp"
 import crosswordJPG from "../images/projects/crossword.jpg"
 import crosswordWEBP from "../images/projects/crossword.webp"
+import etraJPG from "../images/projects/etra.jpg"
+import etraWEBP from "../images/projects/etra.webp"
 
 import { Helmet } from "react-helmet"
 
@@ -35,6 +37,13 @@ class ProjectPage extends React.Component {
           <meta property="og:description" name="twitter:description" content="A excerpt of some of the programming projects I was a part of." />
         </Helmet>
         <div className="w-100 text-center text-xl-left pr-4 pl-4 pr-sm-5 pl-sm-5 pt-3">
+        <ProjectItem
+            name="ETRA"
+            desc='A media site with radio and articles showcasing the creatives of the future. Made in React.'
+            jpg={etraJPG}
+            webp={etraWEBP}
+            link="https://etra.live"
+          />
           <ProjectItem
             name="Playlist Mutator"
             desc='Made in React, utilizes the Spotify API to provide a tool for users to "mutate" existing playlists in React.'
