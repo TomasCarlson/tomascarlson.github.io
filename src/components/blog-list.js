@@ -12,7 +12,7 @@ function BList({ data }) {
         <div>
         <div className="mt-n2 mt-md-1">
           <Row>
-            <Col lg={12} xl={8} className="order-2 order-xl-1 d-block d-xl-flex">
+            <Col lg={12} xl={7} className="order-2 order-xl-1 d-block d-xl-flex">
               <div className="justify-content-center align-self-center">
                 <a href={post.frontmatter.slug} className="d-none d-xl-block">
                   <p className="content-title blog-link text-xl-left project-title mb-0">{post.frontmatter.title}</p>
@@ -21,7 +21,7 @@ function BList({ data }) {
                 <p className="content-text text-center text-xl-left mt-1 mb-n1 mb-sm-1">{post.frontmatter.subtitle}</p>
               </div>
             </Col>
-            <Col lg={12} xl={4} className="order-1 order-xl-2 project-pic">
+            <Col lg={12} xl={5} className="order-1 order-xl-2 project-pic">
               <a href={post.frontmatter.slug} className="d-block d-xl-none">
                 <p className="content-title mb-n1 blog-link text-xl-left project-title">{post.frontmatter.title}</p>
               </a>
@@ -38,7 +38,7 @@ function BList({ data }) {
             </Col>
           </Row>
         </div>
-        <hr />
+        <hr className="pt-2" style={{visibility: "hidden"}}  />
         </div>
       ))}
     </div>

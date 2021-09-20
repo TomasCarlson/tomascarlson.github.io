@@ -5,17 +5,16 @@ import BlogList from "../components/blog-list"
 class BlogPage extends React.Component {
 
   componentDidMount() {
-    document.getElementById("about").style.zIndex = 1;
-    document.getElementById("projects").style.zIndex = 2;
-    document.getElementById("radio").style.zIndex = 3;
-    document.getElementById("blog").style.zIndex = 5;
-    document.body.style.background = "#B0A282";
+    document.getElementById("about-nav").classList.remove("active-nav");
+    document.getElementById("projects-nav").classList.remove("active-nav");
+    document.getElementById("radio-nav").classList.remove("active-nav");
+    document.getElementById("blog-nav").classList.add("active-nav");
   }
 
   // markup
   render() {
     return (
-      <div className="w-100 h-100 d-flex" style={{ color: "#FAFAFA", backgroundColor: "#B0A282", zIndex: "4" }}>
+      <div className="w-100 h-100 d-flex">
         <Helmet>
           <title>Tomás Carlson: Blog</title>
           <meta name="description" content="My blog, featiring original articles surrounding music, tech, culture, and more." />

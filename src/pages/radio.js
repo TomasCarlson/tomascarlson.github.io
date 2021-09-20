@@ -10,17 +10,16 @@ import { Helmet } from "react-helmet"
 class RadioPage extends React.Component {
 
   componentDidMount() {
-    document.getElementById("about").style.zIndex = 2;
-    document.getElementById("projects").style.zIndex = 3;
-    document.getElementById("radio").style.zIndex = 5;
-    document.getElementById("blog").style.zIndex = 2;
-    document.body.style.background = "#ddcd9d";
+    document.getElementById("about-nav").classList.remove("active-nav");
+    document.getElementById("projects-nav").classList.remove("active-nav");
+    document.getElementById("radio-nav").classList.add("active-nav");
+    document.getElementById("blog-nav").classList.remove("active-nav");
   }
 
   // markup
   render() {
     return (
-      <div className="w-100 h-100 d-flex text-center" style={{ color: "#FAFAFA", backgroundColor: "#ddcd9d", zIndex: "4" }}>
+      <div className="w-100 h-100 d-flex text-center">
         <Helmet>
           <title>Tomás Carlson: Radio</title>
           <meta name="description" content="A repository of radio shows I hosted, which concepts I developed and branded." />
