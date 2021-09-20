@@ -88,3 +88,20 @@ body, a {
   width: 75vmin;
   max-width: 100%;
 }
+
+.full-container {
+  min-height: 100vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .full-container {
+    min-height: -webkit-fill-available;
+  }
+
+}
+
+.tomas-photo {
+  width: 50vmin;
+  outline: .75vmin solid #9d6d68;
+  margin-bottom: 1.5vmin;
+}

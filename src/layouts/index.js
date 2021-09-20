@@ -7,6 +7,9 @@ import '../main.css'
 import { Helmet } from "react-helmet"
 
 import socialBanner from "../images/halftone.svg"
+import eyes from "../images/eyes.gif"
+import eyesWEBP from "../images/eyes.webp"
+
 
 class Layout extends React.Component {
 
@@ -26,10 +29,15 @@ class Layout extends React.Component {
             <meta name="theme-color" content="#415969" />
             <meta name="twitter:card" content="summary_large_image"/>
           </Helmet>
-          <Container style={{minHeight: "100vh"}} className="d-flex align-items-center justify-content-center flex-column">
+          <Container className="full-container d-flex align-items-center justify-content-center flex-column">
             <Row className="d-flex align-items-center">
               <Col className="text-center">
                 <h1 id="main-name"><a href="/" style={{textDecoration: "none"}}>Tomás Carlson</a></h1>
+                <picture>
+                  <source srcSet={eyesWEBP} type="image/webp" />
+                  <source srcSet={eyes} type="image/gif" />
+                  <img className="tomas-photo" src={eyes} alt="Tomás Carlson" />
+                </picture>
                 <div className="nav-links">
                   <a id="about-nav" className="pl-0" href="/">About</a>
                   •
