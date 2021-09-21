@@ -11,7 +11,7 @@ import { ReactTransition } from "react-transition-group"
 import Transition from "../components/transition"
 
 
-import socialBanner from "../images/halftone.svg"
+import socialBanner from "../images/halftone.png"
 import eyes from "../images/eyes.gif"
 import eyesWEBP from "../images/eyes.webp"
 
