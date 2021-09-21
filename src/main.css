@@ -92,12 +92,13 @@ body, a {
   max-width: 100%;
 }
 
-.full-container {
+#full-container {
   min-height: 100vh;
+  transition: 2.5s;
 }
 
 @supports (-webkit-touch-callout: none) {
-  .full-container {
+  #full-container {
     min-height: -webkit-fill-available;
   }
 
@@ -112,3 +113,4 @@ body, a {
 a:hover {
   cursor: pointer;
 }
+

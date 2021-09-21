@@ -5,6 +5,11 @@ import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../main.css'
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
+import { ReactTransition } from "react-transition-group"
+
+import Transition from "../components/transition"
+
 
 import socialBanner from "../images/halftone.svg"
 import eyes from "../images/eyes.gif"
@@ -16,8 +21,9 @@ class Layout extends React.Component {
   render() {
     return (
       <>
+
+
           <Helmet>
-            <link rel="icon" type="image/svg" href={socialBanner} />
             <title>Tomás Carlson</title>
             <meta property="og:title" name="twitter:title" content="Tomás Carlson" />
             <meta property="og:description" name="twitter:description" content="Tomás Carlson: Developer, Producer, Graphic Designer and DJ currently studying Computer Science & Design at Northeastern University." />
@@ -26,12 +32,19 @@ class Layout extends React.Component {
             <meta property="og:url" content="https://tomascarlson.com" />
             <meta property="og:site_name" content="Tomás Carlson" />
             <meta name="twitter:image:alt" content="Stylized photo of Tomás Carlson" />
-            <meta name="theme-color" content="#415969" />
+            <meta name="theme-color" content="#9d6d68" />
             <meta name="twitter:card" content="summary_large_image"/>
+            <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png"/>
+            <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png"/>
+            <link rel="manifest" href="img/favicons/site.webmanifest"/>
+            <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#9d6d68"/>
+            <meta name="msapplication-TileColor" content="#9d6d68"/>
           </Helmet>
-          <Container className="full-container d-flex align-items-center justify-content-center flex-column">
+          <Container id="full-container" className="d-flex align-items-center justify-content-center flex-column">
+            
             <Row className="d-flex align-items-center">
-              <Col className="text-center">
+              <Col  className="text-center">
                 <h1 id="main-name"><a href="/" style={{textDecoration: "none"}}>Tomás Carlson</a></h1>
                 <picture>
                   <source srcSet={eyesWEBP} type="image/webp" />
@@ -39,19 +52,22 @@ class Layout extends React.Component {
                   <img className="tomas-photo" src={eyes} alt="Tomás Carlson" />
                 </picture>
                 <div className="nav-links">
-                  <a id="about-nav" className="pl-0" href="/">About</a>
+                  <Link id="about-nav" className="pl-0" to="/">About</Link>
                   •
-                  <a id="projects-nav" href="/projects">Projects</a>
+                  <Link id="projects-nav" to="/projects">Projects</Link>
                   •
-                  <a id="radio-nav" href="/radio">Radio</a>
+                  <Link id="radio-nav" to="/radio">Radio</Link>
                   • 
-                  <a id="blog-nav" href="/blog">Blog</a>
+                  <Link id="blog-nav" to="/blog">Blog</Link>
                 </div>
               </Col>
             </Row>
+            
             <Row>
               <Col>
+                <Transition location={this.props.location}>
                 {this.props.children}
+                </Transition>
               </Col>
             </Row>
           </Container>
