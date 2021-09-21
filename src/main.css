@@ -12,13 +12,13 @@
   src: url(fonts/UltraHyper-Regular.otf);
 }
 
-h1 {
+h1, .content-title {
   font-family: ultra-hyper, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-h2, .content-title, .content-text {
+h2, .content-text {
   font-family: 'Changa', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -31,7 +31,10 @@ p {
   font-style: normal;
 }
 
-
+.content-title {
+  font-size: calc(12px + 3vmin);
+  letter-spacing: .3vmin;
+}
 
 #main-name {
   font-size: 10vmin;
@@ -79,7 +82,7 @@ body, a {
   height: -webkit-fill-available;
 }
 
-.project-image, .radio-photo {
+.project-image, .radio-photo, .article-photo {
   outline: .75vmin solid #9d6d68;
   width: 100%;
 }
@@ -104,4 +107,8 @@ body, a {
   width: 50vmin;
   outline: .75vmin solid #9d6d68;
   margin-bottom: 1.5vmin;
+}
+
+a:hover {
+  cursor: pointer;
 }

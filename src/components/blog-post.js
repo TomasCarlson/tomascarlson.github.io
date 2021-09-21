@@ -7,21 +7,13 @@ class BlogPost extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    document.getElementById("about").style.zIndex = 1;
-    document.getElementById("projects").style.zIndex = 2;
-    document.getElementById("radio").style.zIndex = 3;
-    document.getElementById("blog").style.zIndex = 5;
-    document.body.style.background = "#B0A282";
-  }
-
   // markup
   render() {
     return (
-      <div className="w-100 h-100 d-flex" style={{ color: "#FAFAFA", backgroundColor: "#B0A282", zIndex: "4" }}>
+      <div className="w-100 h-100 d-flex" >
         <div className="w-100 text-center pr-4 pl-4 pr-sm-5 pl-sm-5 pt-3 pb-2">
           {this.props.children}
-          <hr></hr>
+          <hr style={{visibility: 'hidden'}}></hr>
         </div>
       </div>
     )
