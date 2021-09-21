@@ -94,7 +94,6 @@ body, a {
 
 #full-container {
   min-height: 100vh;
-  transition: 2.5s;
 }
 
 @supports (-webkit-touch-callout: none) {
@@ -106,6 +105,7 @@ body, a {
 
 .tomas-photo {
   width: 50vmin;
+  height: 18.1623932vmin;
   outline: .75vmin solid #9d6d68;
   margin-bottom: 1.5vmin;
 }
