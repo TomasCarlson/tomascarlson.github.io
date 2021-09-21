@@ -15,6 +15,11 @@ import socialBanner from "../images/halftone.svg"
 import eyes from "../images/eyes.gif"
 import eyesWEBP from "../images/eyes.webp"
 
+import fav16 from "../images/favicons/favicon-16x16.png"
+import fav32 from "../images/favicons/favicon-32x32.png"
+import favtouch from "../images/favicons/apple-touch-icon.png"
+import favpinned from "../images/favicons/safari-pinned-tab.svg"
+
 
 class Layout extends React.Component {
 
@@ -34,11 +39,10 @@ class Layout extends React.Component {
             <meta name="twitter:image:alt" content="Stylized photo of Tomás Carlson" />
             <meta name="theme-color" content="#9d6d68" />
             <meta name="twitter:card" content="summary_large_image"/>
-            <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png"/>
-            <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png"/>
-            <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png"/>
-            <link rel="manifest" href="img/favicons/site.webmanifest"/>
-            <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#9d6d68"/>
+            <link rel="apple-touch-icon" sizes="180x180" href={favtouch}/>
+            <link rel="icon" type="image/png" sizes="32x32" href={fav32}/>
+            <link rel="icon" type="image/png" sizes="16x16" href={fav16}/>
+            <link rel="mask-icon" href={favpinned} color="#9d6d68"/>
             <meta name="msapplication-TileColor" content="#9d6d68"/>
           </Helmet>
           <Container id="full-container" className="d-flex align-items-center justify-content-center flex-column">
