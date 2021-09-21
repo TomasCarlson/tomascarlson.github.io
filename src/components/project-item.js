@@ -8,7 +8,7 @@ function ProjectItem(props) {
     <>
       <div className="pb-1">
         <Row>
-          <Col lg={12} xl={8} className="order-2 order-xl-1 d-block d-xl-flex">
+          <Col lg={12} xl={7} className="order-2 order-xl-1 d-block d-xl-flex">
             <div className="justify-content-center align-self-center">
               <a href={props.link} className="d-none d-xl-block" target="_blank" rel="noopener noreferrer">
                 <h3 className="content-title mb-2 project-link project-title pb-2">{props.name}</h3>
@@ -16,7 +16,7 @@ function ProjectItem(props) {
               <p className="content-text mb-0">{props.desc}</p>
             </div>
           </Col>
-          <Col lg={12} xl={4} className="order-1 order-xl-2 project-pic">
+          <Col lg={12} xl={5} className="order-1 order-xl-2 project-pic">
             <a href={props.link} className="d-block d-xl-none">
               <p className="content-title mb-2 project-link project-title pb-2">{props.name}</p>
             </a>
@@ -32,7 +32,7 @@ function ProjectItem(props) {
           </Col>
         </Row>
       </div>
-      <hr />
+      <hr className="pt-2" style={{visibility: "hidden"}} />
    </>
    )
  }

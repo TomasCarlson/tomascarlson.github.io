@@ -1,21 +1,34 @@
 import React from "react"
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../main.css'
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
+import { ReactTransition } from "react-transition-group"
 
-import favicon from "../images/favicon.jpg"
-import socialBanner from "../images/social-banner.jpg"
+import Transition from "../components/transition"
+
+
+import socialBanner from "../images/halftone.png"
+import eyes from "../images/eyes.gif"
+import eyesWEBP from "../images/eyes.webp"
+
+import fav16 from "../images/favicons/favicon-16x16.png"
+import fav32 from "../images/favicons/favicon-32x32.png"
+import favtouch from "../images/favicons/apple-touch-icon.png"
+import favpinned from "../images/favicons/safari-pinned-tab.svg"
+
 
 class Layout extends React.Component {
 
   render() {
     return (
       <>
-        <Row className="main-rows m-0">
+
+
           <Helmet>
-            <link rel="icon" type="image/png" href={favicon} />
             <title>Tomás Carlson</title>
             <meta property="og:title" name="twitter:title" content="Tomás Carlson" />
             <meta property="og:description" name="twitter:description" content="Tomás Carlson: Developer, Producer, Graphic Designer and DJ currently studying Computer Science & Design at Northeastern University." />
@@ -24,46 +37,45 @@ class Layout extends React.Component {
             <meta property="og:url" content="https://tomascarlson.com" />
             <meta property="og:site_name" content="Tomás Carlson" />
             <meta name="twitter:image:alt" content="Stylized photo of Tomás Carlson" />
-            <meta name="theme-color" content="#415969" />
+            <meta name="theme-color" content="#9d6d68" />
             <meta name="twitter:card" content="summary_large_image"/>
+            <link rel="apple-touch-icon" sizes="180x180" href={favtouch}/>
+            <link rel="icon" type="image/png" sizes="32x32" href={fav32}/>
+            <link rel="icon" type="image/png" sizes="16x16" href={fav16}/>
+            <link rel="mask-icon" href={favpinned} color="#9d6d68"/>
+            <meta name="msapplication-TileColor" content="#9d6d68"/>
           </Helmet>
-          <Col id="fixed-side" sm={12} md={4} className="fixed-top box-title content-box d-flex flex-column p-0">
-            <Row className="m-0">
-              <Col id="name" sm={12} md={6} className="box-title content-box d-flex flex-column p-0" style={{ backgroundColor: "#FAFAFA", color: "#1F2327", zIndex: "6" }}>
-                <div className="d-flex name-flex">
-                  <div id="name-tag" className="justify-content-center align-self-center w-100 d-block">
-                    <h1 id="name-text" className="m-0 box-title text-center">Tomás Carlson</h1>
-                  </div>
+          <Container id="full-container" className="d-flex align-items-center justify-content-center flex-column">
+            
+            <Row className="d-flex align-items-center">
+              <Col  className="text-center">
+                <h1 id="main-name"><a href="/" style={{textDecoration: "none"}}>Tomás Carlson</a></h1>
+                <picture>
+                  <source srcSet={eyesWEBP} type="image/webp" />
+                  <source srcSet={eyes} type="image/gif" />
+                  <img className="tomas-photo" src={eyes} alt="Tomás Carlson" />
+                </picture>
+                <div className="nav-links">
+                  <Link id="about-nav" className="pl-0" to="/">About</Link>
+                  •
+                  <Link id="projects-nav" to="/projects">Projects</Link>
+                  •
+                  <Link id="radio-nav" to="/radio">Radio</Link>
+                  • 
+                  <Link id="blog-nav" to="/blog">Blog</Link>
                 </div>
               </Col>
-              <Col id="nav" sm={12} md={6} className="text-center box-title content-box d-flex flex-row flex-md-column p-0">
-                <a id="about" href="/" class="selection-box d-flex" style={{ backgroundColor: "#415969" }}>
-                  <div className="justify-content-center align-self-center w-100">
-                    About
-                  </div>
-                </a>
-                <a id="projects" href="/projects" class="selection-box d-flex" style={{ backgroundColor: "#85b1b7" }}>
-                  <div className="justify-content-center align-self-center w-100">
-                    Projects
-                  </div>
-                </a>
-                <a href="/radio" id="radio" className="selection-box d-flex" style={{ backgroundColor: "#ddcd9d" }}>
-                  <div className="justify-content-center align-self-center w-100">
-                    Radio
-                  </div>
-                </a>
-                <a href="/blog" id="blog" className="selection-box d-flex" style={{ backgroundColor: "#b0a282" }}>
-                  <div className="justify-content-center align-self-center w-100">
-                    Blog
-                  </div>
-                </a>
+            </Row>
+            
+            <Row>
+              <Col>
+                <Transition location={this.props.location}>
+                {this.props.children}
+                </Transition>
               </Col>
             </Row>
-          </Col>
-          <Col sm={12} md={{span: 8, offset: 4}} className="content-box p-0 changing-content" style={{ zIndex: "4" }}>
-            {this.props.children}
-          </Col>
-        </Row>
+          </Container>
+
       </>
     )
   }

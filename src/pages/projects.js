@@ -19,17 +19,16 @@ import { Helmet } from "react-helmet"
 class ProjectPage extends React.Component {
 
   componentDidMount() {
-    document.getElementById("about").style.zIndex = 3;
-    document.getElementById("projects").style.zIndex = 5;
-    document.getElementById("radio").style.zIndex = 3;
-    document.getElementById("blog").style.zIndex = 2;
-    document.body.style.background = "#85b1b7";
+    document.getElementById("about-nav").classList.remove("active-nav");
+    document.getElementById("projects-nav").classList.add("active-nav");
+    document.getElementById("radio-nav").classList.remove("active-nav");
+    document.getElementById("blog-nav").classList.remove("active-nav");
   }
 
   // markup
   render() {
     return (
-      <div className="w-100 h-100 d-flex" style={{ color: "#FAFAFA", backgroundColor: "#85b1b7", zIndex: "4" }}>
+      <div className="w-100 h-100 d-flex">
         <Helmet>
           <title>Tomás Carlson: Projects</title>
           <meta name="description" content="A excerpt of some of the programming projects I was a part of." />
